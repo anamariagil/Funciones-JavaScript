@@ -6,7 +6,7 @@ let determinarNegativos = (...energia) => {
             d++
         }
     }
-    console.log (`De ${i} sables, ${d} de ellos tienen energía negativa`)
+    console.log (`De ${i} sables, ${d} de ellos son defectuosos con energía negativa`)
 }
 
-determinarNegativos(5, -5, 6, 7, 8, -9);
+determinarNegativos(5, -5, 6, 7, 8, -9)
