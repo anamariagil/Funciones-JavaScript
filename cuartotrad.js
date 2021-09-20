@@ -1,9 +1,9 @@
-function determinarNegativos(cantidad, ...energia) {
+function determinarNegativos(...energia) {
     let i = 0;
-    let d = 0;    const enArr = energia;
-    while (cantidad>i){
-        if (enArr[i]<0){
-            console.log(`El sable con ${enArr[i]} de energía es uno con energía negativa`)
+    let d = 0;
+    while (energia.length>i){
+        if (energia[i]<0){
+            console.log(`El sable con ${energia[i]} de energía es uno con energía negativa`)
             d++
         }
         i++

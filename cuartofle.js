@@ -1,13 +1,10 @@
-determinarNegativos = (cantidad, ...energia) => {
-    let i = 0;
+let determinarNegativos = (...energia) => {
     let d = 0;
-    const enArr = energia;
-    while (cantidad>i){
-        if (enArr[i]<0){
-            console.log(`El sable con ${enArr[i]} de energía es uno con energía negativa`)
+    for (i=0; energia.length>i; i++){
+        if (energia[i]<0){
+            console.log(`El sable con ${energia[i]} de energía es uno con energía negativa`)
             d++
         }
-        i++
     }
     console.log (`De ${i} sables, ${d} de ellos tienen energía negativa`)
 }
